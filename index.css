@@ -2,6 +2,9 @@
 
 /*VARIABLES*/
 :root{
+    /*COLORS*/
+    --primary: rgb(160, 160, 255);
+    --primaryLight: rgb(200, 200, 255);
     /*FONTS*/
     --FontFamiy: 'Montserrat', sans-serif;
 }
@@ -41,7 +44,7 @@ body{
 
 /*APP*/
 #app{
-    background-color: rgb(160, 160, 255);
+    background-color: var(--primary);
     width: 600px;
     border-radius: 20px;
     max-height: 600px;
@@ -67,7 +70,7 @@ body{
 #app .header input[type='text']{
     border: 0;
     height: 40px;
-    background: rgb(200, 200, 255);
+    background: var(--primaryLight);
     width: 100%;
     padding: 8px;
     border-radius: 50px;
