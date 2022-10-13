@@ -11,7 +11,7 @@ window.addEventListener("load", () => {
     const content = document.querySelector('#content');
 
     const weatherApp = {
-        apiKey : "5ac30503b7dd860c4afcad1b90c00e23",
+        apiKey : "API KEY OPEN WEATHER",
         fetchWeather: function (city) {
             fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${this.apiKey}`).then((response) =>{
                 if(response.status >= 400 && response.status <= 499){
@@ -35,7 +35,7 @@ window.addEventListener("load", () => {
                 humiditySpeed.textContent = `Humidity: ${humidity}%`;
                 wind.textContent = `Wind Speed: ${speed} km/h`;
 
-                const client_id = "xmBQXD7MeDn0Pe1hWgdgOSx4UK8d_WFhyTbiDSGZJ98"
+                const client_id = "CLIENT ID"
 
                 fetch(`https://api.unsplash.com/search/photos?query=${name}&client_id=${client_id}`).then((response) =>{
                     return response.json();
