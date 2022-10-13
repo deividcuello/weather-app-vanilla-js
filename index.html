@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+    <!--FontAwesome-->
+    <script src="https://kit.fontawesome.com/f1941e9a59.js" crossorigin="anonymous"></script>
+    <title>iWeather</title>
+</head>
+<body>
+
+    <div id="app">
+        <div class="container">
+            <div class="header">
+                <h1 class="logo">iWeather</h1>
+                <div class="search">
+                    <input id="search" type="text" placeholder="Buscar ciudad" autocomplete="off">
+                </div>
+            </div>
+            <div id="content" class="content">
+                <div class="left">
+                    <div class="city-name">
+                        <h2 id="city" class="city">Loading...</h2>
+                        <div id="temp" class="temp">Loading...</div>
+                    </div>
+                    <div class="status">
+                        <img id="icon" src="" alt="icon">
+                        <p id="status-info" class="info">Loading..</p>
+                    </div>
+                    <div class="more-info">
+                        <p id="humidity" class="humidity">Loading..</p>
+                        <p id="wind" class="wind">Loading..</p>
+                    </div>
+                </div>
+                <div class="right">
+                    <img id="city-img" class="city-img" src="./images/loading.jpg" alt="city-img">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="./script.js" defer></script>
+
+</body>
+</html>
